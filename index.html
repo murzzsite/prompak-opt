@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПромПак — оптовая поставка упаковочных материалов</title>
+  <meta name="description" content="Оптовые поставки стрейч-плёнки, скотча, картонных коробов, пакетов и расходной упаковки для производств, складов и дистрибьюторов. Омск, отгрузка по всей России.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark">П</span>
+      <span class="logo__text">ПромПак<span class="logo__suffix"> — упаковка оптом</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#advantages">Преимущества</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#process">Как работаем</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+73812001234" class="header__phone">+7 (3812) 00-12-34</a>
+      <a href="#form" class="btn btn--primary btn--sm">Получить прайс</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge">Поставки от 1 паллеты · Омск и вся Россия</div>
+      <h1 class="hero__title">Упаковка оптом<br>для производств<br>и складов</h1>
+      <p class="hero__sub">Стрейч-плёнка, скотч, короба, пакеты — стабильные поставки под ваши объёмы. Без срывов сроков. Собственный склад 3 200 м².</p>
+      <div class="hero__cta">
+        <a href="#form" class="btn btn--primary">Получить прайс-лист</a>
+        <a href="tel:+73812001234" class="btn btn--outline">Позвонить</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__num" data-target="340">0</span><span class="hero__unit">+</span>
+          <span class="hero__label">клиентов-юрлиц</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__num" data-target="8">0</span><span class="hero__unit"> лет</span>
+          <span class="hero__label">на рынке B2B</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__num" data-target="24">0</span><span class="hero__unit"> ч</span>
+          <span class="hero__label">среднее время отгрузки</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__num" data-target="99">0</span><span class="hero__unit">%</span>
+          <span class="hero__label">заявок — в срок</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__card">
+      <div class="hero__card-title">Быстрый расчёт стоимости</div>
+      <form class="hero__form" id="heroForm">
+        <input type="text" name="name" placeholder="Ваше имя и компания" required>
+        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        <input type="text" name="comment" placeholder="Что нужно? (стрейч, скотч, короба…)">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn--primary btn--full">Получить расчёт</button>
+      </form>
+      <p class="hero__form-note">Ответим в течение 30 минут в рабочее время</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section advantages" id="advantages">
+  <div class="container">
+    <h2 class="section__title">Почему выбирают ПромПак</h2>
+    <p class="section__sub">6 причин, по которым производства и склады работают с нами годами</p>
+    <div class="adv-grid">
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M6 18h36M16 10v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="adv__title">Склад 3 200 м² в Омске</h3>
+        <p class="adv__text">Постоянный ассортимент в наличии. Не ждёте производства — берёте со склада сегодня.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.5"/><path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="adv__title">Отгрузка за 24 часа</h3>
+        <p class="adv__text">Заявка до 14:00 — отгрузка в тот же день. После 14:00 — на следующий день утром.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 24l10 10 22-20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="adv__title">Сертифицированное качество</h3>
+        <p class="adv__text">Все партии с сертификатами соответствия. Стрейч — нагрузка от 15 кг/м², скотч — ГОСТ 18251.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 36V20l12-8 12 8v16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="19" y="28" width="10" height="8" rx="1" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3 class="adv__title">Доставка по России</h3>
+        <p class="adv__text">Собственная логистика по Омску и области. Регионы — через транспортные компании с вашего склада.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l4.5 9 10 1.5-7.25 7 1.7 10L24 29l-8.95 4.5 1.7-10L9.5 16.5l10-1.5z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="adv__title">Гибкая система скидок</h3>
+        <p class="adv__text">От 1 паллеты — оптовая цена. От 5 паллет — персональный менеджер и накопительный дисконт до 12%.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M14 24h20M14 32h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="8" y="10" width="32" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3 class="adv__title">Работа по договору</h3>
+        <p class="adv__text">ООО и ИП — НДС, закрывающие документы, отсрочка платежа до 30 дней для постоянных клиентов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section class="section catalog" id="catalog">
+  <div class="container">
+    <h2 class="section__title">Каталог продукции</h2>
+    <p class="section__sub">Основные позиции — всегда в наличии на складе</p>
+    <div class="cat-grid">
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Стрейч-плёнка</span>
+          <span class="srv__price">от 980 ₽/рул.</span>
+        </div>
+        <h3 class="srv__title">Стрейч первичный</h3>
+        <p class="srv__desc">Толщина 17, 20, 23 мкм. Ширина 500 мм. Длина 200/300 м. Нагрузка на разрыв от 15 кг/м².</p>
+        <ul class="srv__props">
+          <li>Паллет/ящиков: без ограничений</li>
+          <li>Цвет: прозрачный, чёрный</li>
+          <li>Упаковка: 6 рул/уп</li>
+        </ul>
+      </div>
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Стрейч-плёнка</span>
+          <span class="srv__price">от 850 ₽/рул.</span>
+        </div>
+        <h3 class="srv__title">Стрейч вторичный (эко)</h3>
+        <p class="srv__desc">Толщина 20 мкм. Для лёгких грузов и внутренней логистики. Экономия 15% vs первичного.</p>
+        <ul class="srv__props">
+          <li>Толщина: 20 мкм</li>
+          <li>Цвет: серый, прозрачный</li>
+          <li>Упаковка: 6 рул/уп</li>
+        </ul>
+      </div>
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Скотч</span>
+          <span class="srv__price">от 38 ₽/рул.</span>
+        </div>
+        <h3 class="srv__title">Упаковочный скотч</h3>
+        <p class="srv__desc">Ширина 48 мм, длина 66 м. Толщина клеевого слоя 24 мкм. Усиленное сцепление с картоном и пластиком.</p>
+        <ul class="srv__props">
+          <li>Цвет: прозрачный, коричневый, жёлтый</li>
+          <li>Упаковка: 36 рул/уп</li>
+          <li>Логотип на заказ: от 1 000 рул.</li>
+        </ul>
+      </div>
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Короба</span>
+          <span class="srv__price">от 22 ₽/шт.</span>
+        </div>
+        <h3 class="srv__title">Картонные короба</h3>
+        <p class="srv__desc">Гофрокартон Т-21, Т-22, Т-24. Размеры от 200×150×100 до 600×400×400 мм. Нагрузка до 15 кг.</p>
+        <ul class="srv__props">
+          <li>30+ стандартных размеров</li>
+          <li>Нестандарт: от 500 шт.</li>
+          <li>Печать: флексография</li>
+        </ul>
+      </div>
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Пакеты</span>
+          <span class="srv__price">от 1,2 ₽/шт.</span>
+        </div>
+        <h3 class="srv__title">Пакеты ПВД/ПНД</h3>
+        <p class="srv__desc">Фасовочные, майка, с ручками. Толщина 15–60 мкм. Для продовольствия — пищевой ГОСТ. Логотип печать.</p>
+        <ul class="srv__props">
+          <li>ПВД: мягкие, прозрачные</li>
+          <li>ПНД: жёсткие, белые/цветные</li>
+          <li>Минимум: от 500 шт./арт.</li>
+        </ul>
+      </div>
+      <div class="srv">
+        <div class="srv__top">
+          <span class="srv__category">Расходники</span>
+          <span class="srv__price">от 65 ₽/рул.</span>
+        </div>
+        <h3 class="srv__title">Термолента / этикетки</h3>
+        <p class="srv__desc">TTR-ленты для принтеров Zebra, Datamax, Honeywell. Этикет-бумага под любые форматы.</p>
+        <ul class="srv__props">
+          <li>Ширина: 25–110 мм</li>
+          <li>Совместимость: все популярные принтеры</li>
+          <li>Срок хранения: 5 лет</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE TABLE -->
+<section class="section price" id="price">
+  <div class="container">
+    <h2 class="section__title">Прайс-лист (ключевые позиции)</h2>
+    <p class="section__sub">Актуальные цены — при заявке от 1 паллеты. Скидки по объёму рассчитываются индивидуально.</p>
+    <div class="table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Фасовка</th>
+            <th>Цена (1 уп.)</th>
+            <th>Опт (от паллеты)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Стрейч первичный 17 мкм</td><td>6 рул. / уп.</td><td>5 880 ₽</td><td>5 350 ₽</td></tr>
+          <tr><td>Стрейч первичный 20 мкм</td><td>6 рул. / уп.</td><td>6 240 ₽</td><td>5 680 ₽</td></tr>
+          <tr><td>Стрейч вторичный 20 мкм</td><td>6 рул. / уп.</td><td>5 100 ₽</td><td>4 650 ₽</td></tr>
+          <tr><td>Скотч 48×66 прозрачный</td><td>36 рул. / уп.</td><td>1 368 ₽</td><td>1 200 ₽</td></tr>
+          <tr><td>Скотч 48×66 коричневый</td><td>36 рул. / уп.</td><td>1 476 ₽</td><td>1 300 ₽</td></tr>
+          <tr><td>Короб Т-22 400×300×300</td><td>25 шт. / уп.</td><td>975 ₽</td><td>850 ₽</td></tr>
+          <tr><td>Пакет ПВД фасовочный</td><td>1 000 шт. / уп.</td><td>1 850 ₽</td><td>1 600 ₽</td></tr>
+          <tr><td>Термолента TTR 58×74</td><td>12 рул. / уп.</td><td>1 140 ₽</td><td>990 ₽</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="price__note">Цены без НДС. Полный прайс-лист — по запросу. Нестандартные позиции рассчитываются отдельно.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process">
+  <div class="container">
+    <h2 class="section__title">Как проходит работа</h2>
+    <p class="section__sub">От заявки до паллет на вашем складе — прозрачно и без сюрпризов</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">01</div>
+        <div class="step__body">
+          <h3 class="step__title">Заявка</h3>
+          <p class="step__text">Звонок, форма на сайте или письмо. Укажите позиции и объём. Ответим в течение 30 минут.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">02</div>
+        <div class="step__body">
+          <h3 class="step__title">Расчёт и КП</h3>
+          <p class="step__text">Менеджер подготовит коммерческое предложение с ценами под ваш объём и сроки поставки.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">03</div>
+        <div class="step__body">
+          <h3 class="step__title">Договор и счёт</h3>
+          <p class="step__text">Подписываем договор поставки. Оплата по счёту или с отсрочкой для постоянных клиентов.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">04</div>
+        <div class="step__body">
+          <h3 class="step__title">Комплектация</h3>
+          <p class="step__text">Собираем заказ на складе. Упаковываем по паллетам. Контроль качества перед отгрузкой.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">05</div>
+        <div class="step__body">
+          <h3 class="step__title">Отгрузка и документы</h3>
+          <p class="step__text">Самовывоз или доставка. Комплект: УПД/ТОРГ-12, счёт-фактура, сертификаты на партию.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="section cases" id="cases">
+  <div class="container">
+    <h2 class="section__title">Кейсы клиентов</h2>
+    <p class="section__sub">Реальные задачи — конкретные цифры</p>
+    <div class="cases-grid">
+      <div class="object">
+        <div class="object__tag">Производство / FMCG</div>
+        <h3 class="object__title">Кондитерская фабрика «АльфаСвит»</h3>
+        <p class="object__desc">Производство 4 000 т/год. Предыдущий поставщик срывал сроки — линии простаивали. Перешли к нам на ежемесячные поставки плёнки и скотча.</p>
+        <ul class="object__results">
+          <li><strong>Объём:</strong> 180 рул. стрейч + 12 уп. скотча в месяц</li>
+          <li><strong>Срывов поставки за 14 месяцев:</strong> 0</li>
+          <li><strong>Экономия vs предыдущего поставщика:</strong> −9%</li>
+        </ul>
+      </div>
+      <div class="object">
+        <div class="object__tag">Дистрибуция / склад</div>
+        <h3 class="object__title">ООО «ТрейдЛогистик»</h3>
+        <p class="object__desc">Дистрибьютор электроники, 2 800 м² склад. Нужны были короба нестандартных размеров под телевизоры и бытовую технику — без остатков.</p>
+        <ul class="object__results">
+          <li><strong>Изготовлено:</strong> 3 типоразмера под заказ</li>
+          <li><strong>Срок производства:</strong> 12 рабочих дней</li>
+          <li><strong>Брак при приёмке:</strong> 0,2% (норма отрасли 2–3%)</li>
+        </ul>
+      </div>
+      <div class="object">
+        <div class="object__tag">Маркетплейс / фулфилмент</div>
+        <h3 class="object__title">FBO-оператор «СкладПлюс»</h3>
+        <p class="object__desc">Фулфилмент для 60+ селлеров Wildberries и Ozon. Расход упаковки непредсказуемый — нужен буфер на складе поставщика под быстрые дозаказы.</p>
+        <ul class="object__results">
+          <li><strong>Позиций в постоянном наличии у нас:</strong> 8 артикулов</li>
+          <li><strong>Среднее время дозаказа:</strong> 4 часа (самовывоз)</li>
+          <li><strong>Работаем вместе:</strong> 2 года</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <h2 class="section__title">Отзывы клиентов</h2>
+    <div class="reviews-grid">
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Работаем уже 3 года. Ни одного срыва. Менеджер всегда на связи, если нужно что-то нестандартное — находят решение за день. Брали короба под нестандартные размеры — сделали точно в срок.»</p>
+        <div class="review__author">Алексей Воронов, директор по логистике, ООО «МегаСнаб»</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Перешли от другого поставщика год назад. Разница в цене — 8%, но главное — предсказуемость. Знаю, что в понедельник заказал — в среду на складе. Документы всегда в порядке.»</p>
+        <div class="review__author">Марина Козлова, закупщик, ИП Козлова М.А.</div>
+      </div>
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Брали стрейч для паллетирования крупной партии оборудования. Качество отличное — ни один паллет не пострадал при перевозке. Сертификаты предоставили сразу, без лишних вопросов.»</p>
+        <div class="review__author">Дмитрий Шаров, менеджер ВЭД, ЗАО «ТехноИмпорт»</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <h2 class="section__title">Частые вопросы</h2>
+    <div class="faq-list">
+      <details class="faq__item">
+        <summary>От какого объёма вы работаете?</summary>
+        <p>Минимальная партия — от 1 паллеты. Это примерно 60–120 рулонов стрейча или 800–1 200 коробов в зависимости от позиции. Точный минимум по каждой позиции — в прайс-листе.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Есть ли возможность отсрочки платежа?</summary>
+        <p>Да, для постоянных клиентов после 2–3 поставок предоставляем отсрочку 14–30 дней. Оформляется в договоре поставки после проверки контрагента.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Вы доставляете в другие регионы?</summary>
+        <p>По Омску и области — собственная доставка. В регионы отгружаем через ТК (СДЭК, Деловые Линии, ПЭК) — оплата транспорта за счёт покупателя или включается в стоимость при больших объёмах.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Можно ли заказать упаковку с логотипом?</summary>
+        <p>Да. Скотч с логотипом — от 1 000 рулонов, срок изготовления 10–14 рабочих дней. Пакеты и короба с печатью — от 500 шт., срок 12–18 рабочих дней. Стоимость зависит от тиража и числа цветов.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Какие документы вы предоставляете?</summary>
+        <p>Полный комплект: УПД (или ТОРГ-12 + счёт-фактура), счёт на оплату, сертификаты соответствия на партию. Работаем с НДС. Первичка — в день отгрузки, оригиналы почтой по запросу.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Что если пришёл бракованный товар?</summary>
+        <p>Принимаем претензии в течение 10 дней с момента поставки. Брак документируем совместно, заменяем за наш счёт или делаем возврат. За 8 лет работы доля рекламаций — менее 0,5%.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FORM + MAP -->
+<section class="section form-section" id="form">
+  <div class="container form-inner">
+    <div class="form">
+      <h2 class="form__title">Получить прайс-лист</h2>
+      <p class="form__sub">Укажите что нужно — пришлём актуальный прайс и рассчитаем стоимость под ваш объём</p>
+      <form id="leadForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Имя и компания" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email (необязательно)">
+        </div>
+        <div class="form-row">
+          <textarea name="comment" rows="3" placeholder="Что нужно? Ориентировочный объём?"></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="map-block">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=73.368212,54.989342&z=14&pt=73.368212,54.989342,pm2rdm&text=ПромПак+Омск"
+        width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="section contacts" id="contacts">
+  <div class="container">
+    <h2 class="section__title">Контакты</h2>
+    <div class="contacts-grid">
+      <div class="contact-card">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">Телефон</div>
+          <a href="tel:+73812001234" class="contact-card__value">+7 (3812) 00-12-34</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">Email</div>
+          <a href="mailto:info@prompak-omsk.ru" class="contact-card__value">info@prompak-omsk.ru</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">Адрес склада</div>
+          <span class="contact-card__value">г. Омск, ул. Промышленная, 14, склад 3</span>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">Режим работы</div>
+          <span class="contact-card__value">Пн–Пт: 8:00–18:00, Сб: 9:00–14:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">
+      <span class="logo__mark">П</span>
+      <span>ПромПак</span>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> ООО «ПромПак». Оптовая поставка упаковочных материалов. Омск.</p>
+    <div class="footer__links">
+      <a href="#catalog">Каталог</a>
+      <a href="#form">Прайс-лист</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB -->
+<div class="fab-group">
+  <a href="https://wa.me/73812001234" class="fab fab--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
